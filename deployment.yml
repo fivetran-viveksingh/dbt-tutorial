@@ -34,6 +34,7 @@ jobs:
 #        command: dbt --version
 
  - name: every5minutes
+   targetName: dev
    schedule: '*/5 * * * *' 
    steps:
      - name: run models
